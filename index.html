@@ -392,7 +392,7 @@
         map.addLayer(layer_GranicePastw_3);
         
 /*
-        // MOJ KOD
+        // Kod pozostaly z eksportu qgis2web
         function river_OdcinkiRzek4(feature, layer){
             //var latlangs = L.geoJson.coordsToLatLngs(feature.geometry.coordinates, 0, false)
                 //river = L.river(latlangs,{
@@ -461,9 +461,7 @@
         bounds_group.addLayer(layer_OdcinkiRzek_4);
         map.addLayer(layer_OdcinkiRzek_4);
 */       
-        
-        // MOJ KOD
-
+	// Utworzenie rzek z pomocą Leaflet.River
         var rivers = L.geoJson(rzeki, {
             onEachFeature: function(feature, layer) {
                 var minSzer = feature.properties.zrodlo;
